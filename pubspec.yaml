@@ -1,0 +1,44 @@
+name: seize_the_day
+description: Seize the Day — Life Navigator (local-first MVP for launch)
+publish_to: "none"
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # state & storage
+  riverpod: ^2.5.1
+  flutter_riverpod: ^2.5.1
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  uuid: ^4.4.2
+  path_provider: ^2.1.4
+
+  # UI & charts
+  fl_chart: ^0.68.0
+
+  # media
+  image_picker: ^1.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/design-system.json
+
+flutter_launcher_icons:
+  image_path: assets/icon.png
+  android: true
+  ios: true
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: assets/icon.png
+
